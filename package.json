@@ -4,8 +4,12 @@
   "description": "%extension.description%",
   "publisher": "larrylcc",
   "author": { "name": "larrylcc" },
-  "version": "0.2.3",
+  "version": "0.2.4",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Larrylcc/quota-dial.git"
+  },
   "private": true,
   "engines": {
     "vscode": "^1.96.0"
@@ -59,6 +63,6 @@
   },
   "scripts": {
     "test": "node test/quota.test.js",
-    "package": "npx --yes @vscode/vsce@4.1.1 package --no-dependencies --allow-missing-repository"
+    "package": "npx --yes @vscode/vsce@4.1.1 package --no-dependencies"
   }
 }

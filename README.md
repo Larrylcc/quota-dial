@@ -13,13 +13,13 @@
 
 从 0.2.1 或更早版本升级时，请先卸载旧扩展 `vibe-lab.codex-quota`。新版的扩展标识是 `larrylcc.codex-quota`，会继续读取已有的 `codexQuota.*` 用户设置。
 
-在桌面版 VS Code 的扩展面板中选择「从 VSIX 安装」，打开 `quota-dial-0.2.3.vsix`。也可在此目录运行以下命令。
+在桌面版 VS Code 的扩展面板中搜索 `@id:larrylcc.codex-quota` 并安装，或运行以下命令。[扩展市场页面](https://marketplace.visualstudio.com/items?itemName=larrylcc.codex-quota)
 
 ```powershell
-code --install-extension ./quota-dial-0.2.3.vsix
+code --install-extension larrylcc.codex-quota
 ```
 
-安装后重载窗口即可应用新版。
+如需离线安装，可从 GitHub 下载 VSIX，在扩展面板中选择「从 VSIX 安装」。安装后重载窗口即可应用新版。[下载 VSIX](https://github.com/Larrylcc/quota-dial/releases/latest)
 
 ### 登录
 
@@ -38,7 +38,7 @@ code --install-extension ./quota-dial-0.2.3.vsix
 
 ### 开发
 
-使用 Node.js 22 或更高版本运行 `npm test`。运行 `npm run package -- --out quota-dial-0.2.3.vsix` 生成 VSIX。在 VS Code 中打开此目录后按 `F5` 可打开扩展开发窗口。
+使用 Node.js 22 或更高版本运行 `npm test`。运行 `npm run package -- --out quota-dial-0.2.4.vsix` 生成 VSIX。在 VS Code 中打开此目录后按 `F5` 可打开扩展开发窗口。
 
 ## English
 
@@ -51,13 +51,13 @@ code --install-extension ./quota-dial-0.2.3.vsix
 
 When upgrading from 0.2.1 or earlier, first uninstall `vibe-lab.codex-quota`. The new extension ID is `larrylcc.codex-quota` and it reads your existing `codexQuota.*` user settings.
 
-In the desktop VS Code Extensions view, choose **Install from VSIX** and open `quota-dial-0.2.3.vsix`. You can also run this command from the project directory.
+In the desktop VS Code Extensions view, search for `@id:larrylcc.codex-quota` and select **Install**, or run the following command. [Marketplace listing](https://marketplace.visualstudio.com/items?itemName=larrylcc.codex-quota)
 
 ```powershell
-code --install-extension ./quota-dial-0.2.3.vsix
+code --install-extension larrylcc.codex-quota
 ```
 
-Reload the window after installing.
+For an offline installation, download the VSIX from GitHub and choose **Install from VSIX** in the Extensions view. Reload the window after installing. [Download the VSIX](https://github.com/Larrylcc/quota-dial/releases/latest)
 
 ### Sign in
 
@@ -76,4 +76,4 @@ For a custom installation, enter the absolute path of the executable in `codexQu
 
 ### Develop
 
-Use Node.js 22 or later and run `npm test`. Run `npm run package -- --out quota-dial-0.2.3.vsix` to build the VSIX. Open this directory in VS Code and press `F5` to launch an extension development window.
+Use Node.js 22 or later and run `npm test`. Run `npm run package -- --out quota-dial-0.2.4.vsix` to build the VSIX. Open this directory in VS Code and press `F5` to launch an extension development window.
