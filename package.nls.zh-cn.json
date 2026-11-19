@@ -1,0 +1,9 @@
+{
+  "extension.displayName": "Quota Dial · AI 额度速览",
+  "extension.description": "在 VS Code 状态栏查看 Codex 和 Antigravity 的剩余额度。",
+  "command.refresh.title": "刷新 Codex 剩余额度",
+  "command.refreshAntigravity.title": "刷新 Antigravity 剩余额度",
+  "configuration.refreshIntervalSeconds.description": "每次额度查询完成后，到下一次自动查询之间的等待时间（秒）。",
+  "configuration.executablePath.description": "Codex 可执行文件的绝对路径（Windows 使用 codex.exe）。留空时自动查找官方扩展和 PATH 中的 Codex。",
+  "configuration.antigravityExecutablePath.description": "Google Antigravity CLI 的绝对路径（Windows 使用 agy.exe）。留空时从 PATH 或默认安装目录查找。"
+}

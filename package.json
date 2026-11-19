@@ -1,0 +1,64 @@
+{
+  "name": "codex-quota",
+  "displayName": "%extension.displayName%",
+  "description": "%extension.description%",
+  "publisher": "larrylcc",
+  "author": { "name": "larrylcc" },
+  "version": "0.2.3",
+  "license": "MIT",
+  "private": true,
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": ["Other"],
+  "icon": "LOGO.png",
+  "main": "./src/extension.js",
+  "l10n": "./l10n",
+  "extensionKind": ["ui"],
+  "activationEvents": ["onStartupFinished"],
+  "capabilities": {
+    "untrustedWorkspaces": { "supported": true },
+    "virtualWorkspaces": { "supported": true }
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "codexQuota.refresh",
+        "title": "%command.refresh.title%"
+      },
+      {
+        "command": "codexQuota.refreshAntigravity",
+        "title": "%command.refreshAntigravity.title%"
+      }
+    ],
+    "configuration": {
+      "title": "%extension.displayName%",
+      "properties": {
+        "codexQuota.refreshIntervalSeconds": {
+          "type": "integer",
+          "default": 60,
+          "minimum": 1,
+          "maximum": 2147483,
+          "scope": "application",
+          "description": "%configuration.refreshIntervalSeconds.description%"
+        },
+        "codexQuota.executablePath": {
+          "type": "string",
+          "default": "",
+          "scope": "machine",
+          "description": "%configuration.executablePath.description%"
+        },
+        "codexQuota.antigravity.executablePath": {
+          "type": "string",
+          "default": "",
+          "scope": "machine",
+          "description": "%configuration.antigravityExecutablePath.description%"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "test": "node test/quota.test.js",
+    "package": "npx --yes @vscode/vsce@4.1.1 package --no-dependencies --allow-missing-repository"
+  }
+}
